@@ -1,11 +1,12 @@
 # 🧩 CRUD de Usuarios con Vue 3 + Vite + Bootstrap 5.3 + SweetAlert2
 
-Este proyecto es una aplicación **Vue.js 3** creada con **Vite**, que implementa un CRUD completo conectado a un endpoint de **MockAPI**. Utiliza **Bootstrap 5.3** para estilos y **SweetAlert2** para confirmaciones de eliminación.
+Este proyecto es una aplicación **Vue.js 3** creada con **Vite**, que implementa un CRUD completo conectado a un endpoint de **MockAPI**. Utiliza **Bootstrap 5.3** para estilos y **SweetAlert2** para confirmaciones de eliminación. También se incluye una nueva pantalla para simular un pago mediante Webpay.
 
 ## 🚀 Tecnologías
 
 - [Vue 3](https://vuejs.org/)
 - [Vite](https://vitejs.dev/)
+- [Vue Router 4](https://router.vuejs.org/)
 - [Axios](https://axios-http.com/)
 - [Bootstrap 5.3](https://getbootstrap.com/)
 - [SweetAlert2](https://sweetalert2.github.io/)
@@ -43,9 +44,12 @@ src/
 │   ├── UserForm.vue         # Formulario de creación/edición
 │   └── UserList.vue         # Lista con botones editar/eliminar
 ├── views/
-│   └── UserView.vue         # Vista principal del CRUD
+│   ├── UserView.vue         # Vista principal del CRUD
+│   └── CompraView.vue       # Vista para simular una compra con Webpay
 ├── services/
 │   └── userService.js       # Conexión con MockAPI
+├── router/
+│   └── index.js             # Configuración de rutas con Vue Router
 ├── App.vue                  # Envoltura principal
 ├── main.js                  # Configuración global
 ```
@@ -90,12 +94,7 @@ npm run dev
 - [x] Eliminar usuario con confirmación
 - [x] Estilos responsivos con Bootstrap
 - [x] Validación visual con `required` y tipos adecuados (`date`, `text`, etc.)
-
----
-
-## 📸 Captura de pantalla
-
-> Agrega aquí una imagen si deseas mostrar la UI final
+- [x] Simulación de compra con Webpay
 
 ---
 
